@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="characters.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="pictures/logonotext.png" alt="logo" class="nav-logo"/>
+        <div class="nav-link">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="nav-hover">
+                    Info
+                    <ul class="sub-link">
+                        <li><a href="#">System</a></li>
+                        <li><a href="characters.html">Character</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="section section-1">
+        <div class="section-3-content">
+            <h1 class="section-3-title">CHARACTERS</h1>
+            <div class="right-cont char-desc">
+                <h2>ABILITIES</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+            <div class="char-desc">
+                <h2>CHARACTER NAME</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+            <div class="right-cont char-desc">
+                <h2>SKILL</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-character section-1">
+        <div class="section-3-content">
+            <h1 class="section-3-title">CHARACTERS</h1>
+            <div class="right-cont char-desc">
+                <h2>ABILITIES</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+            <div class="char-desc">
+                <h2>CHARACTER NAME</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+            <div class="right-cont char-desc">
+                <h2>SKILL</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <img src="" alt="icon">
+        <div>
+            <img src="" alt="f">
+            <img src="" alt="i">
+            <img src="" alt="t">
+        </div>
+    </footer>
+    <script>
+        var sliderCont = $('.slider-container')
+        const isExist = ()=>{
+            var activeElm = $('active').next()
+        }
+        $(window).on('resize',()=>{
+            var activeElm = $('.active')
+            var sliderWidth = $('.section-5 .slider-container img').width()
+            sliderCont.css('left',(activeElm.index())*-sliderWidth)
+        })
+        $('#left-btn').on('click',()=>{
+            var activeElm = $('.active')
+            if (activeElm.prev().length == 0){
+                return
+            }
+            else{
+                console.log(activeElm.index())
+                activeElm.prev().addClass('active')
+            }
+            var sliderWidth = $('.section-5 .slider-container img').width()
+            sliderCont.animate({'left':(activeElm.index()-1)*-sliderWidth},'slow')
+            activeElm.removeClass('active')
+        })
+        $('#right-btn').on('click',()=>{
+            var activeElm = $('.active')
+            if (activeElm.next().length == 0){
+               return
+            }
+            else{
+                console.log(activeElm.index())
+                activeElm.next().addClass('active')
+            }
+            activeElm.removeClass('active')
+            var sliderWidth = $('.section-5 .slider-container img').width()
+            sliderCont.animate({'left':(activeElm.index()+1)*-sliderWidth},'slow')
+
+        })
+        
+    </script>
+</body>
+
+</html>

@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
     <nav>
-        <img src="pictures/logo-game.png" alt="logo" class="nav-logo"/>
+        <img src="pictures/logonotext.png" alt="logo" class="nav-logo"/>
         <div class="nav-link">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li class="nav-hover">
                     Info
                     <ul class="sub-link">
                         <li><a href="#">System</a></li>
-                        <li><a href="#">Character</a></li>
+                        <li><a href="characters.html">Character</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Register</a></li>
@@ -136,6 +137,16 @@
         <div class="section-5-bg"></div>
         <div class="section-5-content">
             <h1 class="section-5-title">GAMEPLAY</h1>
+            <div class="slider">
+                <div class="slider-container">
+                    <img src="pictures/maxresdefault.jpeg" alt="" class="active">
+                    <img src="pictures/maxresdefault.jpeg" alt="" >
+                    <img src="pictures/maxresdefault.jpeg" alt="" >
+                    <img src="pictures/maxresdefault.jpeg" alt="" >
+                </div>
+            </div>
+            <button id="left-btn">Left</button>
+            <button id="right-btn">Right</button>
         </div>
     </div>
     <footer>
@@ -146,5 +157,45 @@
             <img src="" alt="t">
         </div>
     </footer>
+    <script>
+        var sliderCont = $('.slider-container')
+        const isExist = ()=>{
+            var activeElm = $('active').next()
+        }
+        $(window).on('resize',()=>{
+            var activeElm = $('.active')
+            var sliderWidth = $('.section-5 .slider-container img').width()
+            sliderCont.css('left',(activeElm.index())*-sliderWidth)
+        })
+        $('#left-btn').on('click',()=>{
+            var activeElm = $('.active')
+            if (activeElm.prev().length == 0){
+                return
+            }
+            else{
+                console.log(activeElm.index())
+                activeElm.prev().addClass('active')
+            }
+            var sliderWidth = $('.section-5 .slider-container img').width()
+            sliderCont.animate({'left':(activeElm.index()-1)*-sliderWidth},'slow')
+            activeElm.removeClass('active')
+        })
+        $('#right-btn').on('click',()=>{
+            var activeElm = $('.active')
+            if (activeElm.next().length == 0){
+               return
+            }
+            else{
+                console.log(activeElm.index())
+                activeElm.next().addClass('active')
+            }
+            activeElm.removeClass('active')
+            var sliderWidth = $('.section-5 .slider-container img').width()
+            sliderCont.animate({'left':(activeElm.index()+1)*-sliderWidth},'slow')
+
+        })
+        
+    </script>
 </body>
+
 </html>
