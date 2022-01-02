@@ -88,45 +88,7 @@
             <img src="" alt="t">
         </div>
     </footer>
-    <script>
-        var sliderCont = $('.slider-container')
-        const isExist = ()=>{
-            var activeElm = $('active').next()
-        }
-        $(window).on('resize',()=>{
-            var activeElm = $('.active')
-            var sliderWidth = $('.section-5 .slider-container img').width()
-            sliderCont.css('left',(activeElm.index())*-sliderWidth)
-        })
-        $('#left-btn').on('click',()=>{
-            var activeElm = $('.active')
-            if (activeElm.prev().length == 0){
-                return
-            }
-            else{
-                console.log(activeElm.index())
-                activeElm.prev().addClass('active')
-            }
-            var sliderWidth = $('.section-5 .slider-container img').width()
-            sliderCont.animate({'left':(activeElm.index()-1)*-sliderWidth},'slow')
-            activeElm.removeClass('active')
-        })
-        $('#right-btn').on('click',()=>{
-            var activeElm = $('.active')
-            if (activeElm.next().length == 0){
-               return
-            }
-            else{
-                console.log(activeElm.index())
-                activeElm.next().addClass('active')
-            }
-            activeElm.removeClass('active')
-            var sliderWidth = $('.section-5 .slider-container img').width()
-            sliderCont.animate({'left':(activeElm.index()+1)*-sliderWidth},'slow')
-
-        })
-        
-    </script>
+    
 </body>
 
 </html>

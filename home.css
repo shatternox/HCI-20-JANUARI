@@ -72,6 +72,15 @@ footer{
 .section-1 > div > h1{
     font-size: 40px;
 }
+.section-1 > div > h3{
+    background-color: black;
+    border-top: 2px solid #c7161a;
+    border-left: 2px solid #7f1f24;
+    border-right: 2px solid #2daeb8;
+    border-bottom: 2px solid #257c87;
+    padding: 10px 0;
+    text-align: center;
+}
 
 .section-2{
     color: white;
