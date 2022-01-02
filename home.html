@@ -136,14 +136,22 @@
             <h1 class="section-5-title">GAMEPLAY</h1>
             <div class="slider">
                 <div class="slider-container">
-                    <img src="pictures/gameplay-1.jpg" alt="" class="active">
-                    <img src="pictures/gameplay-2.jpg" alt="" >
-                    <img src="pictures/gameplay-3.jpg" alt="" >
-                    <img src="pictures/gameplay-4.jpg" alt="" >
+                    <div class="active">
+                        <img src="pictures/gameplay-1.jpg" alt="" >
+                    </div>
+                    <div>
+                        <img src="pictures/gameplay-2.jpg" alt="" >
+                    </div>
+                    <div>
+                        <img src="pictures/gameplay-3.jpg" alt="" >
+                    </div>
+                    <div>
+                        <img src="pictures/gameplay-4.jpg" alt="" >
+                    </div>
                 </div>
             </div>
-            <button id="left-btn">Left</button>
-            <button id="right-btn">Right</button>
+            <img src="pictures/l-arrow.png" alt="" id="left-btn" class="arrow">
+            <img src="pictures/r-arrow.png" alt=""  id="right-btn" class="arrow">
         </div>
     </div>
     <footer>
@@ -161,7 +169,7 @@
         }
         $(window).on('resize',()=>{
             var activeElm = $('.active')
-            var sliderWidth = $('.section-5 .slider-container img').width()
+            var sliderWidth = $('.section-5 .slider-container div').width()
             sliderCont.css('left',(activeElm.index())*-sliderWidth)
         })
         $('#left-btn').on('click',()=>{
@@ -173,8 +181,12 @@
                 console.log(activeElm.index())
                 activeElm.prev().addClass('active')
             }
-            var sliderWidth = $('.section-5 .slider-container img').width()
-            sliderCont.animate({'left':(activeElm.index()-1)*-sliderWidth},'slow')
+            var sliderWidth = $('.section-5 .slider-container div').width()
+            // sliderCont.animate({'left':(activeElm.index()-1)*-sliderWidth},'slow')
+            sliderCont.animate({'left':(activeElm.index()-1)*-sliderWidth},{
+                duration:800,
+                queue:false
+            })
             activeElm.removeClass('active')
         })
         $('#right-btn').on('click',()=>{
@@ -187,8 +199,13 @@
                 activeElm.next().addClass('active')
             }
             activeElm.removeClass('active')
-            var sliderWidth = $('.section-5 .slider-container img').width()
-            sliderCont.animate({'left':(activeElm.index()+1)*-sliderWidth},'slow')
+            var sliderWidth = $('.section-5 .slider-container div').width()
+            // sliderCont.animate({'left':(activeElm.index()+1)*-sliderWidth},'slow')
+            sliderCont.animate({'left':(activeElm.index()+1)*-sliderWidth},{
+                duration:800,
+                queue:false
+            })
+
 
         })
         

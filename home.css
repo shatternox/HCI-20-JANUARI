@@ -230,6 +230,7 @@ footer{
     display: flex;
     flex-direction: column;
     height: 80%;
+    position: relative;
 }
 .section-5-title{
     text-align: center;
@@ -237,6 +238,7 @@ footer{
 .section-5-content > h1{
     margin: 0;
     padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .section-5-bg{
@@ -258,17 +260,35 @@ footer{
     overflow: hidden;
     position: relative;
 }
-.section-5 .slider-container img{
-    width: calc(100% / 3);
+.section-5 .slider-container div{
+    width: calc(100% / 4);
     height: 100%;
+    display: flex;
+}
+.section-5 .slider-container img{
+    width: 75%;
+    display: block;
+    margin: auto;
 }
 .section-5 .slider-container{
-    width: 500%;
+    width: 400%;
     height: 100%;
     position: relative;
     display: flex;
 }
 
+.arrow{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+#left-btn{
+    top: 50%;
+}
+#right-btn{
+    top: 50%;
+    right: 0;
+}
 @media(max-width:960px){
     .char-desc{
         width: 70%;
