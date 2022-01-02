@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        body{
+            position: relative;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 30px;
+            position: absolute;
+            width: calc(100% - 60px);
+        }
+        
+        nav li a,nav li{
+            text-decoration: none;
+            list-style: none;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            margin: 0 10px;
+        }
+
+        .sub-link{
+            flex-direction: column;
+            display: none;
+        }
+        .sub-link > li{
+            margin: 10px 0;
+        }
+        .nav-hover{
+            position: relative;
+        }
+        .nav-hover:hover .sub-link{
+            display: block;
+            position: absolute;
+            left: 0;
+            padding: 0;
+        }
+        footer{
+            height: 20%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section{
+            height: 100%;
+        }
+        .section-1{
+            display: flex;
+            align-items: center;
+        }
+        .section-1 > div{
+
+        }
+
+        .section-2-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-2-content > *{
+            width: 50%;
+            padding: 0 30px;
+        }
+        .section-2-content > div{
+            text-align: justify;
+        }
+
+        .right-cont{
+            text-align: right;
+            align-self: flex-end;
+        }
+        .section-3-content{
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px;
+        }
+        .section-3-title{
+            text-align: center;
+        }
+        .char-desc{
+            width: 40%;
+        }
+        .section-4{
+            padding: 0 50px;
+        }
+
+        .brown-title{
+            text-align: center;
+            background-color: #a2712f;
+        }
+
+        .brown-content{
+            background-color: #523e25;
+            padding-left: 30px;
+        }
+        .brown-content > div{
+            padding: 20px 0;
+        }
+        .green-title{
+            text-align: center;
+            background-color: #1b6415;
+        }
+        .green-content{
+            background-color: #20391c;
+            padding-left: 30px;
+        }
+        .green-content > div{
+            padding: 20px 0;
+        }
+        .black-title{
+            background-color: black;
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+        .sys-content{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+        .title-sys-cont{
+            color:  #b7b5b5;
+        }
+        .sys-content-container{
+            display: flex;
+            color: white;
+        }
+        .sys-content-container > div{
+            width: 50%;
+        }
+        .sys-content-container p{
+            margin: 0;
+        }
+        .section-5-title{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="" alt="logo">
+        <div class="nav-link">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="nav-hover">
+                    Info
+                    <ul class="sub-link">
+                        <li><a href="#">System</a></li>
+                        <li><a href="#">Character</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="section section-1">
+        <div>
+            <h1>GAME OF THE</h1>
+            <h1>YEAR 2021</h1>
+            <h3>Play Now</h3>
+        </div>
+    </div>
+
+    <div class="section section-2">
+        <div class="section-2-content">
+            <div>
+                <h1>INTRODUCTION</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus.
+                </p>
+                <p>
+                    Nam magna leo, gravida in malesuada ut, egestas nec sem. Cras scelerisque a magna sed iaculis. Nullam molestie dignissim ante nec porttitor. Sed ultricies lacus lacus, ac lobortis tortor euismod at. Fusce at metus risus. Curabitur semper id purus pellentesque dictum. Aliquam fermentum placerat finibus. Mauris varius sed ipsum dictum ultrices. In in mollis elit, nec pretium enim. Sed at ante aliquam, lacinia ligula vitae, hendrerit arcu.
+                </p>
+                <p>
+                    Nullam vel mi ultricies, maximus turpis ac, auctor nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </div>
+            <img src="" alt="logo">
+        </div>
+    </div>
+
+    <div class="section section-3">
+        <div class="section-3-content">
+            <h1 class="section-3-title">CHARACTERS</h1>
+            <div class="right-cont char-desc">
+                <h2>ABILITIES</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+            <div class="char-desc">
+                <h2>CHARACTER NAME</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+            <div class="right-cont char-desc">
+                <h2>SKILL</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus. Nam magna leo, gravida in malesuada ut, egestas nec sem.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-4">
+        <div>
+            <h1>SYSTEM REQUIREMENT</h1>
+            <div class="sys-content">
+                <h2 class="black-title">Windows Requirement</h2>
+                <div class="sys-content-container">
+                    <div>
+                        <div class="brown-title">Minimum Requirements</div>
+                        <div class="brown-content">
+                            <div>
+                                <p class="title-sys-cont">Processor</p>
+                                <p>Intel Core</p>
+                            </div>
+                            <div>
+                                <p class="title-sys-cont">Memory</p>
+                                <p>8 GB</p>
+                            </div>
+                            <div>
+                                <p class="title-sys-cont">Graphics</p>
+                                <p>Nvidia Geforce GTX 760</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="green-title">Minimum Requirements</div>
+                        <div class="green-content">
+                            <div>
+                                <p class="title-sys-cont">Processor</p>
+                                <p>Intel Core</p>
+                            </div>
+                            <div>
+                                <p class="title-sys-cont">Memory</p>
+                                <p>8 GB</p>
+                            </div>
+                            <div>
+                                <p class="title-sys-cont">Graphics</p>
+                                <p>Nvidia Geforce GTX 760</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-5">
+        <div>
+            <h1 class="section-5-title">GAMEPLAY</h1>
+        </div>
+    </div>
+    <footer>
+        <img src="" alt="icon">
+        <div>
+            <img src="" alt="f">
+            <img src="" alt="i">
+            <img src="" alt="t">
+        </div>
+    </footer>
+</body>
+</html>
