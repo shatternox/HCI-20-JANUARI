@@ -5,155 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <style>
-        html,body{
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-        }
-        body{
-            position: relative;
-        }
-        nav{
-            display: flex;
-            justify-content: space-between;
-            margin: 0 30px;
-            position: absolute;
-            width: calc(100% - 60px);
-        }
-        
-        nav li a,nav li{
-            text-decoration: none;
-            list-style: none;
-        }
-        nav ul{
-            display: flex;
-        }
-        nav ul li{
-            margin: 0 10px;
-        }
-
-        .sub-link{
-            flex-direction: column;
-            display: none;
-        }
-        .sub-link > li{
-            margin: 10px 0;
-        }
-        .nav-hover{
-            position: relative;
-        }
-        .nav-hover:hover .sub-link{
-            display: block;
-            position: absolute;
-            left: 0;
-            padding: 0;
-        }
-        footer{
-            height: 20%;
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .section{
-            height: 100%;
-        }
-        .section-1{
-            display: flex;
-            align-items: center;
-        }
-        .section-1 > div{
-
-        }
-
-        .section-2-content{
-            display: flex;
-            justify-content: space-between;
-        }
-        .section-2-content > *{
-            width: 50%;
-            padding: 0 30px;
-        }
-        .section-2-content > div{
-            text-align: justify;
-        }
-
-        .right-cont{
-            text-align: right;
-            align-self: flex-end;
-        }
-        .section-3-content{
-            display: flex;
-            flex-direction: column;
-            padding: 0 50px;
-        }
-        .section-3-title{
-            text-align: center;
-        }
-        .char-desc{
-            width: 40%;
-        }
-        .section-4{
-            padding: 0 50px;
-        }
-
-        .brown-title{
-            text-align: center;
-            background-color: #a2712f;
-        }
-
-        .brown-content{
-            background-color: #523e25;
-            padding-left: 30px;
-        }
-        .brown-content > div{
-            padding: 20px 0;
-        }
-        .green-title{
-            text-align: center;
-            background-color: #1b6415;
-        }
-        .green-content{
-            background-color: #20391c;
-            padding-left: 30px;
-        }
-        .green-content > div{
-            padding: 20px 0;
-        }
-        .black-title{
-            background-color: black;
-            text-align: center;
-            color: white;
-            margin: 0;
-        }
-        .sys-content{
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-        }
-        .title-sys-cont{
-            color:  #b7b5b5;
-        }
-        .sys-content-container{
-            display: flex;
-            color: white;
-        }
-        .sys-content-container > div{
-            width: 50%;
-        }
-        .sys-content-container p{
-            margin: 0;
-        }
-        .section-5-title{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <nav>
-        <img src="" alt="logo">
+        <img src="pictures/logo-game.png" alt="logo" class="nav-logo"/>
         <div class="nav-link">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -179,8 +35,11 @@
     </div>
 
     <div class="section section-2">
+        <div class="section-2-bg">
+
+        </div>
         <div class="section-2-content">
-            <div>
+            <div class="section-2-text">
                 <h1>INTRODUCTION</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum mollis orci, vitae vestibulum elit aliquet ut. Quisque velit eros, rutrum vitae mi pharetra, rhoncus hendrerit lacus.
@@ -192,11 +51,14 @@
                     Nullam vel mi ultricies, maximus turpis ac, auctor nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                 </p>
             </div>
-            <img src="" alt="logo">
+            <img src="pictures/logo-game.png" alt="logo">
         </div>
     </div>
 
     <div class="section section-3">
+        <div class="section-3-bg">
+
+        </div>
         <div class="section-3-content">
             <h1 class="section-3-title">CHARACTERS</h1>
             <div class="right-cont char-desc">
@@ -221,7 +83,10 @@
     </div>
 
     <div class="section section-4">
-        <div>
+        <div class="section-4-bg">
+
+        </div>
+        <div class="section-4-content">
             <h1>SYSTEM REQUIREMENT</h1>
             <div class="sys-content">
                 <h2 class="black-title">Windows Requirement</h2>
@@ -268,7 +133,8 @@
     </div>
 
     <div class="section section-5">
-        <div>
+        <div class="section-5-bg"></div>
+        <div class="section-5-content">
             <h1 class="section-5-title">GAMEPLAY</h1>
         </div>
     </div>
