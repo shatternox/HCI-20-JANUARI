@@ -167,6 +167,7 @@ footer{
 .brown-title{
     text-align: center;
     background-color: #a2712f;
+    padding: 10px 0;
 }
 
 .brown-content{
@@ -179,6 +180,7 @@ footer{
 .green-title{
     text-align: center;
     background-color: #1b6415;
+    padding: 10px 0;
 }
 .green-content{
     background-color: #20391c;
@@ -192,6 +194,7 @@ footer{
     text-align: center;
     color: white;
     margin: 0;
+    padding: 10px 0;
 }
 .sys-content{
     display: flex;
