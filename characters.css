@@ -54,7 +54,6 @@ nav ul li{
     padding: 0;
 }
 footer{
-    height: 20%;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -163,9 +162,6 @@ footer > div > a > img{
     .line-1 img{
         display: block;
         margin: auto;
-    }
-    footer{
-        height: 10%;
     }
     .section-1{
         background-size: unset;
