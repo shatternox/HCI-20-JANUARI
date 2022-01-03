@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="about.css">
+    <title>DMC 5 - Register</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
 
     <div class="container">
         
         <nav>
-            <img src="pictures/logonotext.png" alt="logo" class="nav-logo"/>
+            <a href="home.html"><img src="pictures/logonotext.png" alt="logo" class="nav-logo"/></a>
             <div class="nav-link">
                 <ul>
                     <li><a href="home.html">Home</a></li>
@@ -33,7 +33,11 @@
             <img src="./pictures/logo-game.png" alt="">
         </div>
 
-        <form action="home.html" method="POST">
+        <div>
+            <p id="error" style="color: rgb(236, 248, 8);"></p>
+        </div>
+
+        <form action="">
             <label for="fullname">Full Name</label>
             <br>
             <input type="text" name="fullname" id="fullname" class="text-field">
@@ -45,9 +49,9 @@
             <br>
             <label for="male" class="label-radio">Male</label>
             <input type="radio" id="male" name="radio-button" class="radio">
-            <label for="good" class="label-radio seconds">Female</label>
+            <label for="female" class="label-radio seconds">Female</label>
             <input type="radio" id="female" name="radio-button" class="radio">
-            <label for="bad" class="label-radio seconds">Other</label>
+            <label for="other" class="label-radio seconds">Other</label>
             <input type="radio" id="other" name="radio-button" class="radio">
 
             <br>
@@ -66,6 +70,13 @@
     
             <br>
             <br>
+
+            <label for="confirm-password">Confirm Password</label>
+            <br>
+            <input type="password" name="confirm-password" id="confirm-password" class="text-field">
+    
+            <br>
+            <br>
     
             <label for="address">Address</label>
             <br>
@@ -73,17 +84,24 @@
     
             <br>
             <br>
+
+            <label for="agree">I agree to the <a href="">terms and conditions </a></label>
+            <input type="checkbox" id="agree">
+
+            <br>
+            <br>
     
-            <input type="submit" value="Submit" id="submit">
+            <input type="submit" value="Register" id="submit">
         </form>
     </div>
 
     <footer>
-        <img src="" alt="icon">
+        <img src="pictures/logonotext.png" alt="icon">
+        <div> &copy;Copyright Devil May Crie 5</div>
         <div>
-            <img src="" alt="f">
-            <img src="" alt="i">
-            <img src="" alt="t">
+            <a href="https://instagram.com"> <img src="pictures/instagram-logo.png" alt="i"> </a>
+            <a href="https://twitter.com"> <img src="pictures/twitter-logo.png" alt="t"> </a>
+            <a href="https://facebook.com"> <img src="pictures/facebook-logo.png" alt="f"> </a>
         </div>
     </footer>
 </body>

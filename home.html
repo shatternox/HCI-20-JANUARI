@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
     <nav>
-        <img src="pictures/logonotext.png" alt="logo" class="nav-logo"/>
+        <a href="home.html"><img src="pictures/logonotext.png" alt="logo" class="nav-logo"/></a>
         <div class="nav-link">
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -42,12 +45,14 @@
         <div class="section-2-content">
             <div class="section-2-text">
                 <h1>INTRODUCTION</h1>
-                Devil May Cry 5 is a 2019 action-adventure game developed and published by Capcom. It is the sixth installment overall and the fifth
-                <p>
-                    mainline installment in the Devil May Cry series. Capcom released it for Microsoft Windows, PlayStation 4, and Xbox One on 8 March 2019.The game takes place five years after Devil May Cry 4 and follows a trio of warriors with demonic powers:the returning Dante, Nero and a new protagonist named V as they attempt to stop the Demon King Urizen from destroying the human world.
-                </p>
-                <p>
-                    Across their journey in Red Grave City, the player can use these characters in different missions. Each of them has their way of fighting and becoming stronger.As this happens, the mystery behind V is revealed, along with his connection with Urizen.</p>
+                <div>
+                    Devil May Cry 5 is a 2019 action-adventure game developed and published by Capcom. It is the sixth installment overall and the fifth
+                    <p>
+                        mainline installment in the Devil May Cry series. Capcom released it for Microsoft Windows, PlayStation 4, and Xbox One on 8 March 2019. The game takes place five years after Devil May Cry 4 and follows a trio of warriors with demonic powers:the returning Dante, Nero and a new protagonist named V as they attempt to stop the Demon King Urizen from destroying the human world.
+                    </p>
+                    <p>
+                        Across their journey in Red Grave City, the player can use these characters in different missions. Each of them has their way of fighting and becoming stronger.As this happens, the mystery behind V is revealed, along with his connection with Urizen.</p>
+                </div>
             </div>
             <img src="pictures/logo-game.png" alt="logo">
         </div>
@@ -155,59 +160,16 @@
         </div>
     </div>
     <footer>
-        <img src="" alt="icon">
+        <img src="pictures/logonotext.png" alt="icon">
+        <div> &copy;Copyright Devil May Crie 5</div>
         <div>
-            <img src="" alt="f">
-            <img src="" alt="i">
-            <img src="" alt="t">
+            <a href="https://instagram.com"> <img src="pictures/instagram-logo.png" alt="i"> </a>
+            <a href="https://twitter.com"> <img src="pictures/twitter-logo.png" alt="t"> </a>
+            <a href="https://facebook.com"> <img src="pictures/facebook-logo.png" alt="f"> </a>
         </div>
     </footer>
+    <script src="home.js"></script>
     <script>
-        var sliderCont = $('.slider-container')
-        const isExist = ()=>{
-            var activeElm = $('active').next()
-        }
-        $(window).on('resize',()=>{
-            var activeElm = $('.active')
-            var sliderWidth = $('.section-5 .slider-container div').width()
-            sliderCont.css('left',(activeElm.index())*-sliderWidth)
-        })
-        $('#left-btn').on('click',()=>{
-            var activeElm = $('.active')
-            if (activeElm.prev().length == 0){
-                return
-            }
-            else{
-                console.log(activeElm.index())
-                activeElm.prev().addClass('active')
-            }
-            var sliderWidth = $('.section-5 .slider-container div').width()
-            // sliderCont.animate({'left':(activeElm.index()-1)*-sliderWidth},'slow')
-            sliderCont.animate({'left':(activeElm.index()-1)*-sliderWidth},{
-                duration:800,
-                queue:false
-            })
-            activeElm.removeClass('active')
-        })
-        $('#right-btn').on('click',()=>{
-            var activeElm = $('.active')
-            if (activeElm.next().length == 0){
-               return
-            }
-            else{
-                console.log(activeElm.index())
-                activeElm.next().addClass('active')
-            }
-            activeElm.removeClass('active')
-            var sliderWidth = $('.section-5 .slider-container div').width()
-            // sliderCont.animate({'left':(activeElm.index()+1)*-sliderWidth},'slow')
-            sliderCont.animate({'left':(activeElm.index()+1)*-sliderWidth},{
-                duration:800,
-                queue:false
-            })
-
-
-        })
         
     </script>
 </body>

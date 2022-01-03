@@ -3,14 +3,15 @@ html,body{
     width: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    
 }
-
 
 body{
     width: 100%;
     height: 100%;
+    background-image: url('./pictures/register-wallpaper.jpg');
+    background-size: 200%;
 }
-
 
 .container{
     display: flex;
@@ -27,6 +28,10 @@ nav{
     position: absolute;
     width: calc(100% - 60px);
     color: white;
+}
+
+nav img{
+    filter: grayscale(100%);
 }
 
 nav li a,nav li{
@@ -66,8 +71,22 @@ footer{
     height: 20%;
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 40px;
     align-items: center;
+    color:white;
+}
+footer > img{
+    filter: grayscale(100%);
+    height: 120px;
+    width: 120px;
+}
+footer > div > a{
+    margin: 0 10px;
+}
+footer > div > a > img{
+    height: 40px;
+    width: 40px;
 }
 
 .logo{
@@ -95,4 +114,21 @@ footer{
 }
 
 
+form{
+    padding: 20px;
+    margin-bottom: 50px;
+    color:white;
+}
 
+form .text-field{
+    width: 520px;
+}
+
+form label{
+    font-size: 1.2rem;
+}
+
+
+#error{
+    font-weight: bold;
+}
