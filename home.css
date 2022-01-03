@@ -72,6 +72,15 @@ footer{
 .section-1 > div > h1{
     font-size: 40px;
 }
+.section-1 > div > h3{
+    background-color: black;
+    border-top: 2px solid #c7161a;
+    border-left: 2px solid #7f1f24;
+    border-right: 2px solid #2daeb8;
+    border-bottom: 2px solid #257c87;
+    padding: 10px 0;
+    text-align: center;
+}
 
 .section-2{
     color: white;
@@ -155,7 +164,7 @@ footer{
     margin: 0;
 }
 .section-4-bg{
-    background-image: url('pictures/xDhhYzmU9GvdH9pRFzpf9T.jpeg');
+    background-image: url('pictures/section-4-bg.jpeg');
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
@@ -167,6 +176,7 @@ footer{
 .brown-title{
     text-align: center;
     background-color: #a2712f;
+    padding: 10px 0;
 }
 
 .brown-content{
@@ -179,6 +189,7 @@ footer{
 .green-title{
     text-align: center;
     background-color: #1b6415;
+    padding: 10px 0;
 }
 .green-content{
     background-color: #20391c;
@@ -192,6 +203,7 @@ footer{
     text-align: center;
     color: white;
     margin: 0;
+    padding: 10px 0;
 }
 .sys-content{
     display: flex;
@@ -218,6 +230,7 @@ footer{
     display: flex;
     flex-direction: column;
     height: 80%;
+    position: relative;
 }
 .section-5-title{
     text-align: center;
@@ -225,10 +238,11 @@ footer{
 .section-5-content > h1{
     margin: 0;
     padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .section-5-bg{
-    background-image: url('pictures/maxresdefault.jpeg');
+    background-image: url('pictures/section-5-bg.jpeg');
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
@@ -246,17 +260,35 @@ footer{
     overflow: hidden;
     position: relative;
 }
-.section-5 .slider-container img{
-    width: calc(100% / 3);
+.section-5 .slider-container div{
+    width: calc(100% / 4);
     height: 100%;
+    display: flex;
+}
+.section-5 .slider-container img{
+    width: 75%;
+    display: block;
+    margin: auto;
 }
 .section-5 .slider-container{
-    width: 500%;
+    width: 400%;
     height: 100%;
     position: relative;
     display: flex;
 }
 
+.arrow{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+#left-btn{
+    top: 50%;
+}
+#right-btn{
+    top: 50%;
+    right: 0;
+}
 @media(max-width:960px){
     .char-desc{
         width: 70%;
