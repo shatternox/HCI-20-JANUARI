@@ -10,7 +10,7 @@ body{
     width: 100%;
     height: 100%;
     background-image: url('../pictures/register-wallpaper.jpg');
-    background-size: 300%;
+    background-size: 350%;
 }
 
 
@@ -143,5 +143,13 @@ form label{
     }
     footer > *{
         margin: 10px 0;
+    }
+
+    form .text-field{
+        width: 300px;
+    }
+
+    #address{
+        width: 300px;
     }
 }
