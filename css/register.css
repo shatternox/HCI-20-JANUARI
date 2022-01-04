@@ -11,6 +11,7 @@ body{
     height: 100%;
     background-image: url('../pictures/register-wallpaper.jpg');
     background-size: 350%;
+    overflow-x: auto;
 }
 
 
@@ -19,6 +20,8 @@ body{
     align-items: center;
     align-content: center;
     flex-direction: column;
+    padding: 100px;
+    overflow-x: auto;
 }
 
 nav{
@@ -76,9 +79,9 @@ footer{
     padding: 0 40px;
     align-items: center;
     color:white;
+    opacity: 0.8;
 }
 footer > img{
-    filter: grayscale(100%);
     height: 120px;
     width: 120px;
 }
@@ -92,11 +95,9 @@ footer > div > a > img{
 
 .logo{
     margin-top: 120px;
-}
-
-.logo img{
     width: 300px;
 }
+
 
 .about{
     display: flex;
@@ -119,6 +120,7 @@ form{
     padding: 20px;
     margin-bottom: 50px;
     color:white;
+    overflow-x: auto;
 }
 
 form .text-field{
@@ -151,5 +153,16 @@ form label{
 
     #address{
         width: 300px;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+}
+
+@media(max-width:600px){
+    nav{
+        overflow-x: auto;
     }
 }
