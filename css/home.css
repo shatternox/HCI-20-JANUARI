@@ -344,7 +344,9 @@ footer > div > a > img{
 }
 
 @media(max-width:800px){
-   
+    .section-2{
+        overflow-x: hidden;
+    }
     footer{
         flex-direction: column;
     }
