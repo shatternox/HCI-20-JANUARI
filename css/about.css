@@ -10,7 +10,7 @@ html,body{
 body{
     width: 100%;
     height: 100%;
-    background-image: url('./pictures/about-wallpaper.jfif');
+    background-image: url('../pictures/about-wallpaper.jfif');
     background-size: 200%;
 }
 
@@ -114,7 +114,8 @@ footer > div > a > img{
     flex-direction: column;
     align-items: center;
     color: azure;
-    /* padding: 80px; */
+    padding: 40px;
+    text-align: center;
 }
 
 .story{
@@ -122,8 +123,20 @@ footer > div > a > img{
     flex-direction: column;
     align-items: center;
     color: azure;
-    padding: 80px;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 
 
+@media(max-width:800px){
+  
+    footer{
+        flex-direction: column;
+        height: 40%;
+    }
+    footer > *{
+        margin: 10px 0;
+    }
+}

@@ -80,7 +80,7 @@ footer > div > a > img{
 .section-1{
     display: flex;
     align-items: center;
-    background-image: url('pictures/character-bg.jpg');
+    background-image: url('../pictures/character-bg.jpeg');
     background-size: 100% 100%;
     color: white;
     padding: 0 40px;
@@ -95,7 +95,7 @@ footer > div > a > img{
     color: white;
 }
 .section-3-bg{
-    background-image: url('pictures/section-3-bg.jpeg');
+    background-image: url('../pictures/section-3-bg.jpeg');
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
@@ -165,5 +165,36 @@ footer > div > a > img{
     }
     .section-1{
         background-size: unset;
+    }
+}
+
+@media(max-width:800px){
+  
+    footer{
+        flex-direction: column;
+        
+    }
+    footer > *{
+        margin: 10px 0;
+    }
+
+    .section{
+        padding: 250px 0;
+    }
+}
+
+
+@media(max-width:1500px){
+  
+    footer{
+        flex-direction: column;
+        
+    }
+    footer > *{
+        margin: 10px 0;
+    }
+
+    .section{
+        padding: 250px 0;
     }
 }
