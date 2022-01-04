@@ -136,6 +136,11 @@ footer > div > a > img{
     display: flex;
     flex-direction: column;
     width: 70%;
+    margin-bottom: 40px;
+}
+.short-desc{
+    text-align: center;
+    width: 60%;
 }
 .title-sys-cont{
     color:  #b7b5b5;
