@@ -58,8 +58,7 @@ nav ul li{
     margin: 0 10px;
 }
 .nav-logo{
-    width: 120px;
-    height: 100px;
+    width: 100px;
 }
 
 .sub-link{
@@ -89,10 +88,7 @@ footer{
     color:white;
     opacity: 0.8;
 }
-footer > img{
-    height: 120px;
-    width: 120px;
-}
+
 footer > div > a{
     margin: 0 10px;
 }

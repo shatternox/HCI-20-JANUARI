@@ -35,8 +35,7 @@ nav ul li{
     margin: 0 10px;
 }
 .nav-logo{
-    width: 120px;
-    height: 100px;
+    width: 100px;
 }
 
 .sub-link{
@@ -56,21 +55,16 @@ nav ul li{
     padding: 0;
 }
 footer{
+    height: 20%;
     background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
     align-items: center;
     color:white;
-    position: absolute;
-    width: calc(100% - 80px);
-    bottom: -420%;
     opacity: 0.8;
 }
-footer > img{
-    height: 120px;
-    width: 120px;
-}
+
 footer > div > a{
     margin: 0 10px;
 }
