@@ -50,7 +50,8 @@ nav ul li{
     padding: 0;
 }
 footer{
-    height: 20%;
+    /* height: 20%; */
+    min-height: 144px;
     background-color: black;
     display: flex;
     justify-content: space-between;
